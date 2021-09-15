@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index",
+    "test": "jest --watchAll",
+    "test:ci": "jest --ci --coverage --coverageReporters=html --coverageReporters=lcov"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,9 @@
   },
   "homepage": "https://github.com/GustavoPedro/AplicacaoNodeAula#readme",
   "keywords": [],
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "jest": "^26.0.1",
+    "supertest": "^4.0.2"
+  }
 }
